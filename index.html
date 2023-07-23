@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        *{
+    padding: 0;
+    box-sizing: 0;
+    margin: 0;
+}
+.body{
+    background-color: aliceblue;
+    border: 1px solid aliceblue;
+    
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    
+    height: 100vh;
+
+}
+.header{
+    text-align: center;
+}
+.header img{
+    width: 320px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(251, 253, 255);
+    border: 1px solid dashed;
+    height: max-content;
+    width: max-content;
+    padding: 5px;
+    border-radius: 17px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+form{
+    display: flex;
+    flex-direction: column;
+
+}
+.input-box{
+    display:flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 12px;
+    margin-top: 10%;
+    margin-bottom: 15%;
+
+}
+.input-box input{
+    width: 100%;
+    border: 1px solid white;
+    border-style: none;
+    padding: 3px;
+    height: 50px;
+    outline: none;
+}
+.input-box input::placeholder{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(45, 45, 255);
+    font-size: 100%;
+}
+.button{
+   text-align: center;
+
+}
+.btn{
+    width: 100px;
+    height: 32px;
+    background-color: rgb(61, 127, 242);
+    font-family: sans-serif;
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-radius: 13px;
+    margin: 3px;
+    opacity: 0.85;
+    margin-bottom: 10%;
+    overflow: hidden;
+
+}
+.btn:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+.btn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+.footer{
+    margin: 15px;
+    color: rgb(14, 13, 13);
+    font-size: 17px;
+    text-align: center;
+    
+}
+.footer p{
+    margin: 12px;
+}
+.checkbox{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 15px;
+    color: blue;
+}
+.checkbox input{
+    width: min-content;
+    margin: 5px;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:visited{
+    color: black;
+}
+a:active{
+    color: black;
+}
+
+
+@media (min-width: 320px) and (max-width:480px) {
+    .input-box input {
+      height: 68px; /* Adjust the desired height here */
+    }
+     .header img{
+        width: 220px;
+        overflow: hidden;
+     }
+  }
+
+    </style>
+</head>
+<body>
+    <body>
+        <div class="body">
+            <div class="form">
+                
+                    <div class="header">
+                        <img src="Welcome Image.png" alt="photo">
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="name" id="Name" placeholder="Name">
+                        
+                        <input type="email" name="email" id="email" placeholder="Email">
+                        <input type="password" name="password" id="password" placeholder="Password">
+                            <div class="checkbox">
+                            <input type="checkbox" name="check" id="checkBot">
+                            Show Password
+                        </div>
+                        
+                    </div>
+                    <div class="button">
+                        <button class="btn">SignUp</button>
+                    </div>
+               
+    
+                
+            </div>
+            <div class="footer">
+                
+               <a href="login.html"><p>Have an account ?</p></a> 
+                
+            </div>
+        </div>
+         
+
+
+
+
+        
+<script type = "module" src="logic.js" defer></script>
+      
+</body>
+
+
+
+
+ 
+
+</html>
